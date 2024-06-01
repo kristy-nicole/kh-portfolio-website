@@ -1,0 +1,367 @@
+/*
+------COLOR PALETTE--------
+#8CFF90 light green
+#565264 davy's gray
+#706677 dim gray
+#A6808C mountbatten pink
+#CCB7AE Pale Dogwood
+
+#AD9A90 Del Rio
+#252A31 Shark
+#523633 Congo Brown
+#cc655a Congo Brown (lighter, redder)
+#ed4532 Congo Brown (lightest)
+#624F41 Kabul
+
+*/
+
+/*---------------------GLOBAL STYLES--------------------*/
+
+html {
+    box-sizing: border-box;  /*box model fix part 1*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;    /*box model fix part 2*/
+}
+
+body{
+    color:#565264;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h1.decorative-heading {
+    font-family: "Rock Salt", cursive;
+   
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", sans-serif;
+    
+}
+
+h1 {
+    font-size: 4.25rem;
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+h3 {
+    font-size: 2.75rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*sets default to 10px*/
+}
+
+html, body, main {
+
+    height: 100%;
+
+}
+
+img {
+    width: 600px;
+}
+
+
+.center {
+    text-align:center; 
+}
+
+/*Links*/
+a {
+
+    color: #cc655a;
+
+}
+
+a:hover {
+
+    color: #ed4532; 
+    text-decoration: none;
+
+}
+
+.btn {
+
+    background: #ed4532; 
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: .1em;
+    line-height: 1;
+    border-radius: 6px;
+
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 50px;
+}
+
+.content-wrapper {
+
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+
+
+}
+
+.image-item img{
+
+    float: left;
+    margin-right: 30px;
+
+}
+
+.image-item {
+    display: flow-root;
+}
+
+.resume-section{
+    border-bottom: 50px;
+}
+
+.resume-title{
+    border-bottom: 2px dashed black;
+    text-align: center;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+
+}
+
+/*---------------------PAGE LAYOUT----------------------*/
+.main-container {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .content-flex-wrapper {
+    flex: 1 0 auto;
+}
+
+/*---------------------HEADER SECTION--------------------*/
+header::before{
+
+    background: url(../images/biotissue/allison-talking.jpg);
+    background-size: cover;
+    content: ""; /*needed for the before pseudo-element to display*/
+    display: block;
+    height: 500px;
+
+
+}
+
+header {
+    /*background: url(../images/biotissue/allison-talking.jpg) no-repeat;
+    background-size: cover; */
+    color: black;
+}
+
+/* header img{
+    width: 50px;
+    height: 50px;
+} */
+
+header .transparent-wrapper {
+    background: rgb(255 255 255 / 0.5);
+}
+
+.headshot-container {
+   /* display: flow-root; */
+}
+
+.headshot {
+
+    position: absolute;
+    top:400px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+
+  /*  float: left;
+    width: 300px;
+    heigh: 300px; */
+
+}
+
+
+/*---------------------EDUCATION--------------------*/
+
+.education {
+    background: #CCB7AE;
+}
+
+.education img{
+    width: 100px;
+    height: 80px;
+}
+
+.education-item {
+    margin: 30px 0;
+}
+
+.education-item h1, .education-item h2, .education-item h3 {
+    margin: 0;
+}
+
+.education-item p{
+    margin: 0;
+}
+
+
+/*---------------------FEATURED PROJECTS--------------------*/
+
+
+.projects {
+    background: #f7f7f7;
+    color: #252A31;
+}
+
+.projects img{
+
+    width: 300px;
+
+}
+
+.project-item{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+
+}
+
+
+
+/*---------------------WORK EXPERIENCE--------------------*/
+
+
+.work-experience{
+    background: url(../images/biotissue/group-shot.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+
+}
+
+
+.work-experience .transparent-wrapper {
+    background: rgb(255 255 255 / 0.8);
+}
+
+.work-item{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
+
+.work-item h1, .work-item h2, .work-item h3 {
+    margin: 0;
+}
+
+.col1 p{
+    margin: 0;
+}
+
+.col1 img{
+    width: 300px;
+}
+
+.col1 .tall-image{
+    width: 150px;
+    height: 255px;
+    margin: 25px 75px 25px 75px;
+    
+}
+
+.col2 p:first-child{
+    margin-top: 0;
+}
+/*----------------------SKILLS ----------------------------------*/
+
+.skills-group{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.skills-group h3, h2 {
+    text-align: center;
+    /*margin-top: 50px;*/
+}
+
+.skills-group img {
+    width: 375px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+/*---------------------CONTACT INFO / KEEP IN TOUCH--------------------*/
+
+.contact-info {
+    background: #CCB7AE;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  
+}
+
+.contact-info h2 {
+    text-align: center;
+}
+
+.contact-info img{
+    width: 50px;
+}
+
+.contact-info li {
+    margin-left: 20px;
+}
+
+.contact-info img:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
