@@ -170,7 +170,7 @@ a:hover {
 /*---------------------HEADER SECTION--------------------*/
 header::before{
 
-    background: url(../images/biotissue/allison-talking.jpg);
+    background: url(../images/Portfolio-Site-Header.png);
     background-size: cover;
     content: ""; /*needed for the before pseudo-element to display*/
     display: block;
